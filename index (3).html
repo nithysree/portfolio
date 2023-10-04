@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equive="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0">
+        <title>personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="header">      
+        <header>
+            <div class="head">
+            <nav id="text"><ul>
+                <li><a href="#head">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        </header>
+        <div class="container">
+            <div class="img">
+                <img src="logo.jpg" class="logo"></img>
+            </div>    
+            <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi,I'm <span>Nithya</span><br>sree From India</br></h1>
+          </div>
+       </div>
+<div id="about">
+    <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="abt img.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me    
+            </h1>
+                <p class="para">
+                    I am a dedicated,organized and methodical individual.I have good interpersonal skills,am an 
+                    excellent team worker and am keen and very willing to learn and develop new skills.I am reliable
+                    and dependable and often seek new responsibilites within a wide range of employment areas. Currently Studying 3rd year 
+                    in kingston Engineering college and am well trainedin python,Html as well as css.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>     
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>UI/UX</span><br>Desinging web/APP interfaces</br>
+                        </li>
+                        <li>
+                            <span>Web Development</span><br>Desinging web/APP interfaces</br>
+                        </li>
+                        <li>
+                            <span>APP Development</span><br>Desinging web/APP interfaces</br>
+                        </li>
+                    </ul>
+                </div>
+             
+                <div class="tab-contents active-tab" id="experience">
+                    <p>I am a fresher so till now there is no any work experience </p>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li>
+                            <span>2020</span><br>completed my schooling in Holycross matriculation school</br>
+                        </li>
+                        <li>
+                            <span>2021</span><br>Btech IT in kingston</br>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+        <div style="padding-left: 450px;"><h1 class="sub-title">My services</h1></div>
+        <div class="container">
+        <div class="services-list">
+            <div class="service">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>
+                    I have Designed my portfolio by using HTML and CSS as well as javascript
+                    2years back I developed a web application for food delivery .
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-code"></i>
+                <h2>Python</h2>
+                <p>
+                  I build an gaming application called as Hangman 
+                  and Basic calculator using python.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+            <div class="service">
+                <i class="fa-brands fa-app-store"></i>
+                <h2>APP Design</h2>
+                <p>
+                    I have designed the user interface in Mobile application.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">
+                    Contact Me
+                </h1>
+                <p><i class="fa fa-envelope"></i>@nithya04088gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nithya-sree-g-04b908256/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/nithya-sree-20"><i class=" fab fa-github"></i></a>
+                    <a href="https://instagram.com/sree_n_i_t_h?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+             
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email">
+                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+    </body>
+</html>
+
